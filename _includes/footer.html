@@ -1,0 +1,54 @@
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <p class="footer__brand-name">Ayesa Dream Couture</p>
+        <p class="footer__tagline">Where Nature Blooms into Fairytale Dreams</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/story/' | relative_url }}">Our Story</a></li>
+          <li><a href="{{ '/collections/' | relative_url }}">Collections</a></li>
+          <li><a href="{{ '/experience/' | relative_url }}">Experience</a></li>
+          <li><a href="{{ '/process/' | relative_url }}">Process</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="{{ '/shop/' | relative_url }}">Ready to Wear</a></li>
+          <li><a href="{{ '/custom-order/' | relative_url }}">Custom Order</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+          <li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="{{ '/policies/shipping/' | relative_url }}">Shipping</a></li>
+          <li><a href="{{ '/policies/returns/' | relative_url }}">Returns</a></li>
+          <li><a href="{{ '/policies/custom-order-policy/' | relative_url }}">Custom Order Policy</a></li>
+          <li><a href="{{ '/policies/privacy/' | relative_url }}">Privacy Policy</a></li>
+          <li><a href="{{ '/policies/terms/' | relative_url }}">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; {{ 'now' | date: "%Y" }} Ayesa Dream Couture. All rights reserved.</p>
+      <div class="footer__policies">
+        <a href="{{ '/policies/privacy/' | relative_url }}">Privacy</a>
+        <a href="{{ '/policies/terms/' | relative_url }}">Terms</a>
+        <a href="{{ '/policies/shipping/' | relative_url }}">Shipping</a>
+        <a href="{{ '/policies/returns/' | relative_url }}">Returns</a>
+      </div>
+    </div>
+  </div>
+</footer>

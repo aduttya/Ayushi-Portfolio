@@ -1,0 +1,203 @@
+---
+layout: default
+title: Custom Order
+description: Start your dream dress — share your vision and Ayesa Dream Couture will bring it to life.
+permalink: /custom-order/
+---
+
+<div class="form-page">
+
+  <span class="label reveal">Custom Order</span>
+  <h1 class="reveal" data-delay="100">Start Your Dream Dress</h1>
+  <p class="reveal" data-delay="200">
+    Create a piece that is uniquely yours. Share your vision, and we will bring it to life.
+  </p>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+    <!-- PERSONAL DETAILS -->
+    <div class="form-section reveal">
+      <p class="form-section__title">Personal Details</p>
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" />
+        </div>
+        <div class="field">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com" />
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number (WhatsApp preferred)</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" />
+        </div>
+        <div class="field">
+          <label for="location">City &amp; Country</label>
+          <input type="text" id="location" name="location" placeholder="City, Country" />
+        </div>
+      </div>
+    </div>
+
+    <!-- OUTFIT DETAILS -->
+    <div class="form-section reveal">
+      <p class="form-section__title">Outfit Details</p>
+      <div class="form-grid">
+        <div class="field form-grid--full">
+          <label>What would you like to create? *</label>
+          <div class="check-group">
+            <label><input type="checkbox" name="outfit_type" value="Corset + Skirt Set" /> Corset + Skirt Set</label>
+            <label><input type="checkbox" name="outfit_type" value="Fairytale Gown" /> Fairytale Gown</label>
+            <label><input type="checkbox" name="outfit_type" value="Custom Fantasy Outfit" /> Custom Fantasy Outfit</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="occasion">Occasion / Event Type</label>
+          <select id="occasion" name="occasion">
+            <option value="">Select occasion</option>
+            <option>Wedding</option>
+            <option>Reception</option>
+            <option>Photoshoot</option>
+            <option>Red Carpet</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="event_date">Event Date</label>
+          <input type="date" id="event_date" name="event_date" />
+        </div>
+        <div class="field form-grid--full">
+          <label>Delivery Timeline</label>
+          <div class="check-group">
+            <label><input type="radio" name="timeline" value="Standard (4–8 weeks)" /> Standard (4–8 weeks)</label>
+            <label><input type="radio" name="timeline" value="Express (extra charges apply)" /> Express (extra charges apply)</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESIGN VISION -->
+    <div class="form-section reveal">
+      <p class="form-section__title">Design Vision</p>
+      <div class="form-grid">
+        <div class="field form-grid--full">
+          <label for="dream_desc">Describe your dream outfit *</label>
+          <textarea id="dream_desc" name="dream_description" rows="4" placeholder="Example: soft pastel butterfly gown, dramatic princess look, floral corset with tulle skirt..." required></textarea>
+        </div>
+        <div class="field form-grid--full">
+          <label>Preferred Silhouette</label>
+          <div class="check-group">
+            <label><input type="radio" name="silhouette" value="Ball Gown" /> Ball Gown</label>
+            <label><input type="radio" name="silhouette" value="A-line" /> A-line</label>
+            <label><input type="radio" name="silhouette" value="Mermaid" /> Mermaid</label>
+            <label><input type="radio" name="silhouette" value="Custom" /> Custom</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="color_palette">Color Palette</label>
+          <input type="text" id="color_palette" name="color_palette" placeholder="Pastels / Specific shade / Custom color" />
+        </div>
+        <div class="field form-grid--full">
+          <label>Embellishment Preference</label>
+          <div class="check-group">
+            <label><input type="checkbox" name="embellishment" value="3D Flowers" /> 3D Flowers</label>
+            <label><input type="checkbox" name="embellishment" value="Pearls" /> Pearls</label>
+            <label><input type="checkbox" name="embellishment" value="Butterflies" /> Butterflies</label>
+            <label><input type="checkbox" name="embellishment" value="Crystals / Stones" /> Crystals / Stones</label>
+            <label><input type="checkbox" name="embellishment" value="Minimal" /> Minimal</label>
+            <label><input type="checkbox" name="embellishment" value="Heavy Couture" /> Heavy Couture</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INSPIRATION REFERENCES -->
+    <div class="form-section reveal">
+      <p class="form-section__title">Inspiration References</p>
+      <div class="form-grid">
+        <div class="field form-grid--full">
+          <label for="inspo_links">Inspiration Links (Pinterest / Instagram etc.)</label>
+          <textarea id="inspo_links" name="inspiration_links" rows="3" placeholder="Paste your inspiration links here — Pinterest boards, Instagram posts, etc."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEASUREMENTS -->
+    <div class="form-section reveal">
+      <p class="form-section__title">Body Measurements (inches or cm — please specify)</p>
+      <div class="form-grid">
+        <div class="field">
+          <label for="bust">Bust</label>
+          <input type="text" id="bust" name="bust" placeholder='e.g. 34"' />
+        </div>
+        <div class="field">
+          <label for="waist">Waist</label>
+          <input type="text" id="waist" name="waist" placeholder='e.g. 28"' />
+        </div>
+        <div class="field">
+          <label for="hip">Hip</label>
+          <input type="text" id="hip" name="hip" placeholder='e.g. 38"' />
+        </div>
+        <div class="field">
+          <label for="shoulder">Shoulder Width</label>
+          <input type="text" id="shoulder" name="shoulder_width" placeholder='e.g. 14"' />
+        </div>
+        <div class="field">
+          <label for="armhole">Armhole</label>
+          <input type="text" id="armhole" name="armhole" placeholder='e.g. 15"' />
+        </div>
+        <div class="field">
+          <label for="sleeve">Sleeve Length (if needed)</label>
+          <input type="text" id="sleeve" name="sleeve_length" placeholder='e.g. 24"' />
+        </div>
+        <div class="field">
+          <label for="outfit_length">Outfit Length</label>
+          <input type="text" id="outfit_length" name="outfit_length" placeholder='e.g. 60"' />
+        </div>
+        <div class="field">
+          <label for="height">Height</label>
+          <input type="text" id="height" name="height" placeholder='e.g. 5\'6"' />
+        </div>
+        <div class="field">
+          <label for="heel">Heel Height (if wearing heels)</label>
+          <input type="text" id="heel" name="heel_height" placeholder='e.g. 3"' />
+        </div>
+      </div>
+    </div>
+
+    <!-- BUDGET & NOTES -->
+    <div class="form-section reveal">
+      <p class="form-section__title">Budget &amp; Additional Notes</p>
+      <div class="form-grid">
+        <div class="field">
+          <label for="budget">Your Budget Range</label>
+          <input type="text" id="budget" name="budget" placeholder="e.g. $500–$800 USD" />
+        </div>
+        <div class="field form-grid--full">
+          <label for="notes">Specific Requirements or Notes</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Any additional details, allergies to materials, special requests..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- DELIVERY -->
+    <div class="form-section reveal">
+      <p class="form-section__title">Delivery Details</p>
+      <div class="form-grid">
+        <div class="field form-grid--full">
+          <label for="address">Full Delivery Address</label>
+          <textarea id="address" name="delivery_address" rows="2" placeholder="Street, City, State, Country"></textarea>
+        </div>
+        <div class="field">
+          <label for="pincode">Pincode / Zip Code</label>
+          <input type="text" id="pincode" name="pincode" placeholder="e.g. 10001" />
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <button type="submit" class="btn btn--filled">Submit My Dream Order</button>
+    </div>
+
+  </form>
+
+</div>

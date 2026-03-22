@@ -1,0 +1,13 @@
+title: Ayesa Dream Couture
+description: Where Nature Blooms into Fairytale Dreams
+url: ""
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
