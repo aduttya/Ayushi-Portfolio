@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{% if page.title %}{{ page.title }} — {% endif %}Ayesa Dream Couture</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Where Nature Blooms into Fairytale Dreams{% endif %}" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
