@@ -167,6 +167,11 @@ em { color: var(--color-rose-dark); font-style: italic; }
   background: rgba(253, 248, 245, 0.98);
   border-bottom-color: var(--color-border);
 }
+.nav--menu-open {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: var(--color-bg);
+}
 
 .nav__logo {
   font-family: var(--font-serif);
@@ -214,7 +219,7 @@ em { color: var(--color-rose-dark); font-style: italic; }
   border: none;
   cursor: pointer;
   padding: 4px;
-  z-index: 201;
+  z-index: 10000;
 }
 .nav__toggle span {
   display: block;
@@ -542,6 +547,33 @@ em { color: var(--color-rose-dark); font-style: italic; }
   transition: color var(--t-fast) ease;
 }
 .coll-card__link:hover { color: var(--color-rose); }
+.coll-card { cursor: pointer; background: none; border: none; text-align: left; padding: 0; }
+
+/* Collection Modal */
+.coll-modal__inner { max-width: 900px; }
+.coll-modal__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.coll-modal__img { aspect-ratio: 3/4; overflow: hidden; }
+.coll-modal__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.coll-modal__img--ph { background: var(--color-surface); }
+.coll-modal__details { display: flex; flex-direction: column; gap: 1.2rem; padding-top: 0.5rem; }
+.coll-modal__details h2 { font-style: italic; font-weight: 300; font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.coll-modal__desc { font-size: 0.92rem; line-height: 1.75; color: var(--color-text-muted); }
+.coll-modal__meta { display: flex; flex-direction: column; gap: 0.8rem; }
+.coll-modal__meta > div { display: flex; flex-direction: column; gap: 0.2rem; }
+.coll-modal__key {
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-rose);
+}
+.coll-modal__val { font-size: 0.88rem; color: var(--color-text); }
+.coll-modal__actions { display: flex; gap: 1rem; flex-wrap: wrap; padding-top: 0.5rem; }
 
 /* =============================================
    EXPERIENCE STEPS
@@ -1391,7 +1423,7 @@ em { color: var(--color-rose-dark); font-style: italic; }
     justify-content: center;
     align-items: center;
     gap: 2.2rem;
-    z-index: 199;
+    z-index: 9999;
   }
   .nav__links.is-open { display: flex; }
   .nav__links a { font-size: 1rem; letter-spacing: 0.08em; }
@@ -1423,4 +1455,6 @@ em { color: var(--color-rose-dark); font-style: italic; }
   .product-layout { grid-template-columns: 1fr; gap: 2.5rem; }
   .shop-cards { grid-template-columns: 1fr; }
   .product-modal__inner { padding: 3rem 1.5rem 2rem; }
+  .coll-modal__layout { grid-template-columns: 1fr; gap: 2rem; }
+  .coll-modal__img { aspect-ratio: 16/9; }
 }

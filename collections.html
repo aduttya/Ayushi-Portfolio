@@ -17,42 +17,121 @@ permalink: /collections/
     <div class="collections-grid">
 
       <!-- Corset Sets -->
-      <div class="coll-card reveal">
+      <button class="coll-card reveal" data-modal="modal-coll-corset">
         <div class="coll-card__image">
           <img src="/assets/images/collections/corset-sets.jpeg" alt="Corset Tops">
         </div>
         <span class="label">Collection 01</span>
         <h3>Corset Tops</h3>
         <p>Structured elegance meets soft femininity. Each corset top is sculpted to celebrate the figure while embracing romance.</p>
-        <a href="/custom-order/" class="coll-card__link">Order Custom &rarr;</a>
-      </div>
+        <span class="coll-card__link">Explore Collection &rarr;</span>
+      </button>
 
       <!-- Fairytale Gowns -->
-      <div class="coll-card reveal" data-delay="150">
+      <button class="coll-card reveal" data-modal="modal-coll-gowns" data-delay="150">
         <div class="coll-card__image">
-          <img src="/assets/images/collections/corset-sets-2.jpeg" alt="Fairytale Gowns">
+          <div class="img-ph" style="height:100%;">Fairytale Gowns</div>
         </div>
         <span class="label">Collection 02</span>
         <h3>Fairytale Gowns</h3>
         <p>Dramatic silhouettes crafted with layers of dreams. For the moments that deserve to feel like magic.</p>
-        <a href="/custom-order/" class="coll-card__link">Order Custom &rarr;</a>
-      </div>
+        <span class="coll-card__link">Explore Collection &rarr;</span>
+      </button>
 
       <!-- Seasonal Collections -->
-      <div class="coll-card reveal" data-delay="300">
+      <button class="coll-card reveal" data-modal="modal-coll-seasonal" data-delay="300">
         <div class="coll-card__image">
-          <div class="img-ph" style="height:100%;">Seasonal</div>
+          <img src="/assets/images/collections/corset-sets-2.jpeg" alt="Seasonal Collections">
         </div>
         <span class="label">Collection 03</span>
         <h3>Seasonal Collections</h3>
         <p>Inspired by seasons, moods, and nature. Limited pieces that capture the fleeting beauty of each passing chapter.</p>
-        <a href="/custom-order/" class="coll-card__link">Order Custom &rarr;</a>
-      </div>
+        <span class="coll-card__link">Explore Collection &rarr;</span>
+      </button>
 
     </div>
 
   </div>
 </section>
+
+<!-- COLLECTION MODAL — Corset Tops -->
+<div class="product-modal" id="modal-coll-corset" role="dialog" aria-modal="true" aria-label="Corset Tops Collection">
+  <div class="product-modal__inner coll-modal__inner">
+    <button class="product-modal__close" aria-label="Close">&times;</button>
+    <div class="coll-modal__layout">
+      <div class="coll-modal__img">
+        <img src="/assets/images/collections/corset-sets.jpeg" alt="Corset Tops">
+      </div>
+      <div class="coll-modal__details">
+        <span class="label">Collection 01</span>
+        <h2>Corset Tops</h2>
+        <p class="coll-modal__desc">Structured elegance meets soft femininity. Each corset top is sculpted to celebrate the figure — boned, shaped, and finished with intention. From sweetheart necklines to square cuts, every piece is a study in feminine architecture.</p>
+        <hr class="product-rule">
+        <div class="coll-modal__meta">
+          <div><span class="coll-modal__key">Signature Detail</span><span class="coll-modal__val">Handcrafted appliqués, ribbon lace-up backs</span></div>
+          <div><span class="coll-modal__key">Available As</span><span class="coll-modal__val">Ready to Wear &amp; Custom Order</span></div>
+          <div><span class="coll-modal__key">Dispatch</span><span class="coll-modal__val">4–8 weeks &middot; Express on request</span></div>
+        </div>
+        <div class="coll-modal__actions">
+          <a href="/shop/" class="btn btn--filled">View in Shop</a>
+          <a href="/custom-order/" class="btn">Order Custom</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COLLECTION MODAL — Fairytale Gowns -->
+<div class="product-modal" id="modal-coll-gowns" role="dialog" aria-modal="true" aria-label="Fairytale Gowns Collection">
+  <div class="product-modal__inner coll-modal__inner">
+    <button class="product-modal__close" aria-label="Close">&times;</button>
+    <div class="coll-modal__layout">
+      <div class="coll-modal__img coll-modal__img--ph">
+        <div class="img-ph" style="height:100%;">Fairytale Gowns</div>
+      </div>
+      <div class="coll-modal__details">
+        <span class="label">Collection 02</span>
+        <h2>Fairytale Gowns</h2>
+        <p class="coll-modal__desc">Dramatic silhouettes born from dreams and stardust. These gowns are for the moments that deserve to feel like magic — grand entrances, unforgettable evenings, and days you want to remember forever. Each piece is crafted entirely to your vision.</p>
+        <hr class="product-rule">
+        <div class="coll-modal__meta">
+          <div><span class="coll-modal__key">Signature Detail</span><span class="coll-modal__val">Layered skirts, dramatic volume, hand-finished edges</span></div>
+          <div><span class="coll-modal__key">Available As</span><span class="coll-modal__val">Custom Order Only</span></div>
+          <div><span class="coll-modal__key">Dispatch</span><span class="coll-modal__val">8–14 weeks depending on design</span></div>
+        </div>
+        <div class="coll-modal__actions">
+          <a href="/custom-order/" class="btn btn--filled">Start Your Gown</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COLLECTION MODAL — Seasonal Collections -->
+<div class="product-modal" id="modal-coll-seasonal" role="dialog" aria-modal="true" aria-label="Seasonal Collections">
+  <div class="product-modal__inner coll-modal__inner">
+    <button class="product-modal__close" aria-label="Close">&times;</button>
+    <div class="coll-modal__layout">
+      <div class="coll-modal__img">
+        <img src="/assets/images/collections/corset-sets-2.jpeg" alt="Seasonal Collections">
+      </div>
+      <div class="coll-modal__details">
+        <span class="label">Collection 03</span>
+        <h2>Seasonal Collections</h2>
+        <p class="coll-modal__desc">Inspired by the turning of seasons, the moods of nature, and the quiet poetry of each passing chapter. Seasonal pieces are released in limited runs — each one a moment captured in fabric, never to be repeated exactly the same way twice.</p>
+        <hr class="product-rule">
+        <div class="coll-modal__meta">
+          <div><span class="coll-modal__key">Signature Detail</span><span class="coll-modal__val">Limited runs, season-inspired palettes</span></div>
+          <div><span class="coll-modal__key">Available As</span><span class="coll-modal__val">Limited Ready to Wear &amp; Custom Order</span></div>
+          <div><span class="coll-modal__key">Drops</span><span class="coll-modal__val">Announced via Instagram</span></div>
+        </div>
+        <div class="coll-modal__actions">
+          <a href="/custom-order/" class="btn btn--filled">Order Custom</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="cta-banner">
   <div class="cta-banner__inner">

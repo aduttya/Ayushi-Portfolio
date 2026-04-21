@@ -26,6 +26,7 @@ if (toggle && links) {
     const open = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!open));
     links.classList.toggle('is-open', !open);
+    nav.classList.toggle('nav--menu-open', !open);
     document.body.style.overflow = open ? '' : 'hidden';
   });
 
@@ -33,6 +34,7 @@ if (toggle && links) {
     a.addEventListener('click', () => {
       toggle.setAttribute('aria-expanded', 'false');
       links.classList.remove('is-open');
+      nav.classList.remove('nav--menu-open');
       document.body.style.overflow = '';
     });
   });
@@ -62,6 +64,16 @@ document.querySelectorAll('.product-sizes__grid').forEach(grid => {
       grid.querySelectorAll('.size-box').forEach(b => b.classList.remove('active'));
       box.classList.add('active');
     });
+  });
+});
+
+// --- Collection Card Modal ---
+document.querySelectorAll('.coll-card[data-modal]').forEach(card => {
+  card.addEventListener('click', () => {
+    const modal = document.getElementById(card.dataset.modal);
+    if (!modal) return;
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
   });
 });
 
