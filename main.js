@@ -47,3 +47,46 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (!wasOpen) item.classList.add('open');
   });
 });
+
+// --- Product Accordion (multiple open allowed) ---
+document.querySelectorAll('.prod-acc-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.prod-acc-item').classList.toggle('open');
+  });
+});
+
+// --- Size Box Toggle ---
+document.querySelectorAll('.product-sizes__grid').forEach(grid => {
+  grid.querySelectorAll('.size-box').forEach(box => {
+    box.addEventListener('click', () => {
+      grid.querySelectorAll('.size-box').forEach(b => b.classList.remove('active'));
+      box.classList.add('active');
+    });
+  });
+});
+
+// --- Product Modal ---
+const closeModal = modal => {
+  modal.classList.remove('is-open');
+  document.body.style.overflow = '';
+};
+
+document.querySelectorAll('.shop-card-item').forEach(card => {
+  card.addEventListener('click', () => {
+    const modal = document.getElementById(card.dataset.modal);
+    if (!modal) return;
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+document.querySelectorAll('.product-modal').forEach(modal => {
+  modal.querySelector('.product-modal__close').addEventListener('click', () => closeModal(modal));
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(modal); });
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.product-modal.is-open').forEach(closeModal);
+  }
+});
