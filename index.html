@@ -16,32 +16,183 @@ layout: default
 </section>
 
 <!-- FEATURED COLLECTIONS -->
-<section class="section">
+<section class="section feat-collections">
   <div class="section__inner">
     <div class="section__header reveal">
       <span class="label">Featured Collections</span>
       <h2>Crafted for Dreamers</h2>
+      <p class="feat-collections__by">Designed by Ayesa</p>
     </div>
-    <div class="feat-grid">
-      <a href="/collections/" class="feat-card reveal">
-        <img src="/assets/images/collections/corset-sets.jpeg" alt="Corset Tops" class="feat-card__img">
-        <div class="feat-card__overlay">
-          <span class="feat-card__label">Collection</span>
-          <h3 class="feat-card__title">Corset Tops</h3>
-          <span class="feat-card__arrow">Explore &rarr;</span>
-        </div>
-      </a>
-      <a href="/collections/" class="feat-card reveal" data-delay="150">
-        <img src="/assets/images/collections/corset-sets-2.jpeg" alt="Satin Corset Sets" class="feat-card__img">
-        <div class="feat-card__overlay">
-          <span class="feat-card__label">Collection</span>
-          <h3 class="feat-card__title">Satin Corset Tops</h3>
-          <span class="feat-card__arrow">Explore &rarr;</span>
-        </div>
-      </a>
+
+    <!-- Tabs -->
+    <div class="fc-tabs reveal" data-delay="100">
+      <button class="fc-tab is-active" data-tab="corset-tops">Corset Tops</button>
+      <button class="fc-tab" data-tab="fairytale-gowns">Fairytale Gowns</button>
+      <button class="fc-tab" data-tab="seasonal">Seasonal Collection</button>
     </div>
+
+    <!-- Panel: Corset Tops -->
+    <div class="fc-panel is-active" id="fc-corset-tops">
+      <div class="fc-products">
+        <button class="shop-card-item reveal" data-modal="modal-black-butterfly">
+          <div class="shop-card-item__img">
+            <img src="/assets/images/shop/corset-black-butterfly-front.jpeg" alt="Midnight Butterfly Corset Top">
+            <span class="product-badge">New</span>
+          </div>
+          <div class="shop-card-item__info">
+            <h3>Midnight Butterfly Corset Top</h3>
+            <p>A Signature Piece by Ayesa</p>
+            <span class="shop-card-item__view">View Details &rarr;</span>
+          </div>
+        </button>
+        <button class="shop-card-item reveal" data-modal="modal-mint-satin" data-delay="150">
+          <div class="shop-card-item__img">
+            <img src="/assets/images/shop/corset-blue-satin-front.jpeg" alt="Mint Satin Corset Top">
+            <span class="product-badge">Limited</span>
+          </div>
+          <div class="shop-card-item__info">
+            <h3>Mint Satin Corset Top</h3>
+            <p>A Signature Piece by Ayesa</p>
+            <span class="shop-card-item__view">View Details &rarr;</span>
+          </div>
+        </button>
+      </div>
+      <div class="fc-panel__footer">
+        <a href="/shop/" class="btn">View All in Shop &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Panel: Fairytale Gowns -->
+    <div class="fc-panel" id="fc-fairytale-gowns">
+      <div class="fc-coming-soon">
+        <span class="label">Collection 02</span>
+        <h3>Fairytale Gowns</h3>
+        <p>Dramatic silhouettes crafted with layers of dreams. For the moments that deserve to feel like magic. Available as custom order only.</p>
+        <a href="/custom-order/" class="btn btn--filled">Start Your Gown</a>
+      </div>
+    </div>
+
+    <!-- Panel: Seasonal -->
+    <div class="fc-panel" id="fc-seasonal">
+      <div class="fc-coming-soon">
+        <span class="label">Collection 03</span>
+        <h3>Seasonal Collection</h3>
+        <p>Inspired by seasons, moods, and nature. Limited pieces released in drops — each one a moment captured in fabric, never to be repeated.</p>
+        <a href="/custom-order/" class="btn btn--filled">Order Custom</a>
+      </div>
+    </div>
+
   </div>
 </section>
+
+<!-- Product modals (shared with shop page) -->
+<div class="product-modal" id="modal-black-butterfly" role="dialog" aria-modal="true" aria-label="Midnight Butterfly Corset Top">
+  <div class="product-modal__inner">
+    <button class="product-modal__close" aria-label="Close">&times;</button>
+    <div class="product-layout">
+      <div class="product-gallery">
+        <div class="product-gallery__main">
+          <img src="/assets/images/shop/corset-black-butterfly-front.jpeg" alt="Midnight Butterfly Corset Top — Front">
+          <span class="product-img__cap">Front</span>
+        </div>
+        <div class="product-gallery__thumbs">
+          <div class="product-img">
+            <img src="/assets/images/shop/corset-black-laceup-back.jpeg" alt="Back">
+            <span class="product-img__cap">Back</span>
+          </div>
+          <div class="product-img">
+            <img src="/assets/images/shop/corset-black-butterfly-detail.jpeg" alt="Detail">
+            <span class="product-img__cap">Detail</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-details">
+        <span class="product-badge">New</span>
+        <h2 class="product-name">Midnight Butterfly Corset Top</h2>
+        <p class="product-signature">A Signature Piece by Ayesa</p>
+        <hr class="product-rule">
+        <div class="product-sizes">
+          <div class="product-sizes__header">
+            <span class="product-sizes__label">Select Size</span>
+            <a href="/contact/#size-chart" class="product-sizes__guide">Size Guide</a>
+          </div>
+          <div class="product-sizes__grid">
+            <button class="size-box">XXS</button>
+            <button class="size-box">XS</button>
+            <button class="size-box">S</button>
+            <button class="size-box">M</button>
+            <button class="size-box">L</button>
+            <button class="size-box">XL</button>
+            <button class="size-box">Custom</button>
+          </div>
+        </div>
+        <p class="product-dispatch">Dispatch: 4–8 weeks &nbsp;&middot;&nbsp; Express available on request</p>
+        <a href="/contact/" class="btn btn--filled product-cta">Enquire Now</a>
+        <div class="prod-accordion">
+          <div class="prod-acc-item">
+            <button class="prod-acc-q">Description <span class="prod-acc-icon">+</span></button>
+            <div class="prod-acc-a">A strapless fitted corset top crafted in rich midnight velvet. Features a sweetheart neckline, structured boning, and handcrafted 3D teal butterfly appliqués with pearl centres at each wing. Finished with a satin ribbon lace-up back.</div>
+          </div>
+          <div class="prod-acc-item">
+            <button class="prod-acc-q">Designed &amp; Curated By <span class="prod-acc-icon">+</span></button>
+            <div class="prod-acc-a">Ayesa &mdash; Founder &amp; Lead Designer, Ayesa Dream Couture.<br>Each piece is imagined and crafted with intention, drawing from a world of fantasy, nature, and feminine artistry.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="product-modal" id="modal-mint-satin" role="dialog" aria-modal="true" aria-label="Mint Satin Corset Top">
+  <div class="product-modal__inner">
+    <button class="product-modal__close" aria-label="Close">&times;</button>
+    <div class="product-layout">
+      <div class="product-gallery--2">
+        <div class="product-img">
+          <img src="/assets/images/shop/corset-blue-satin-front.jpeg" alt="Mint Satin Corset Top — Front">
+          <span class="product-img__cap">Front</span>
+        </div>
+        <div class="product-img">
+          <img src="/assets/images/shop/corset-blue-satin-laceup-back.jpeg" alt="Mint Satin Corset Top — Back">
+          <span class="product-img__cap">Back</span>
+        </div>
+      </div>
+      <div class="product-details">
+        <span class="product-badge">Limited</span>
+        <h2 class="product-name">Mint Satin Corset Top</h2>
+        <p class="product-signature">A Signature Piece by Ayesa</p>
+        <hr class="product-rule">
+        <div class="product-sizes">
+          <div class="product-sizes__header">
+            <span class="product-sizes__label">Select Size</span>
+            <a href="/contact/#size-chart" class="product-sizes__guide">Size Guide</a>
+          </div>
+          <div class="product-sizes__grid">
+            <button class="size-box">XXS</button>
+            <button class="size-box">XS</button>
+            <button class="size-box">S</button>
+            <button class="size-box">M</button>
+            <button class="size-box">L</button>
+            <button class="size-box">XL</button>
+            <button class="size-box">Custom</button>
+          </div>
+        </div>
+        <p class="product-dispatch">Dispatch: 4–8 weeks &nbsp;&middot;&nbsp; Express available on request</p>
+        <a href="/contact/" class="btn btn--filled product-cta">Enquire Now</a>
+        <div class="prod-accordion">
+          <div class="prod-acc-item">
+            <button class="prod-acc-q">Description <span class="prod-acc-icon">+</span></button>
+            <div class="prod-acc-a">A strapless fitted corset top in smooth mint satin. Features a square neckline, structured boning with clean panel seaming, and a satin ribbon lace-up tie-back. Minimal, refined, and effortlessly elegant.</div>
+          </div>
+          <div class="prod-acc-item">
+            <button class="prod-acc-q">Designed &amp; Curated By <span class="prod-acc-icon">+</span></button>
+            <div class="prod-acc-a">Ayesa &mdash; Founder &amp; Lead Designer, Ayesa Dream Couture.<br>Each piece is imagined and crafted with intention, drawing from a world of fantasy, nature, and feminine artistry.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- COUTURE EXPERIENCE PREVIEW -->
 <div class="preview">

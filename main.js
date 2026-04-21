@@ -67,6 +67,17 @@ document.querySelectorAll('.product-sizes__grid').forEach(grid => {
   });
 });
 
+// --- Featured Collection Tabs ---
+document.querySelectorAll('.fc-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const parent = tab.closest('.feat-collections');
+    parent.querySelectorAll('.fc-tab').forEach(t => t.classList.remove('is-active'));
+    parent.querySelectorAll('.fc-panel').forEach(p => p.classList.remove('is-active'));
+    tab.classList.add('is-active');
+    parent.querySelector('#fc-' + tab.dataset.tab).classList.add('is-active');
+  });
+});
+
 // --- Collection Card Modal ---
 document.querySelectorAll('.coll-card[data-modal]').forEach(card => {
   card.addEventListener('click', () => {
